@@ -311,6 +311,32 @@ git push -u origin new_branch
 
     git rebase branch_name
 
-## Начало работы в GitHub
+## Начало работы с удаленными репозиториями в GitHub
 
-1. 
+### 1. Создание удаленного репозитория на `GitHub`
+
+### `Процесс слияния` 
+
+1. `В случае если у вас нет локальных файлов с изменениями`
+
+```
+echo "# -111" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/FedorPanin/-111.git
+git push -u origin main
+```
+
+2. `В случае если есть локальные файлы которые необходимо связать с удаленным репозиторием`
+
+```
+git remote add origin https://github.com/FedorPanin/-111.git
+git branch -M main
+git push -u origin main
+```
+
+### `Команда для загрузки из удаленного репозитория`
+
+```
