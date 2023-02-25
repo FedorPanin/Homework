@@ -320,23 +320,37 @@ git push -u origin new_branch
 1. `В случае если у вас нет локальных файлов с изменениями`
 
 ```
-echo "# -111" >> README.md
+echo "<Repositories Name>" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/FedorPanin/-111.git
+git remote add origin <url>
 git push -u origin main
 ```
 
 2. `В случае если есть локальные файлы которые необходимо связать с удаленным репозиторием`
 
 ```
-git remote add origin https://github.com/FedorPanin/-111.git
+git remote add origin <url>
 git branch -M main
 git push -u origin main
 ```
 
-### `Команда для загрузки из удаленного репозитория`
+### `Команда для загрузки удаленного репозитория`
 
+```
+git clone <url>
+```
+
+### `Команда для загрузки изменений в локальный репозиторий из удаленного`
+
+```
+git pull
+```
+
+### `Команда для загрузки изменений в удаленный репозиторий из локального`
+
+```
+git push
 ```
